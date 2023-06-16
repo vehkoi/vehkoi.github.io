@@ -1,43 +1,44 @@
 import React from 'react';
+import '../styles.css'
 
 const skillsData = {
     icons: [
         // WEB
         {
             name: "JavaScript",
-            class: "devicon-javascript-plain"
+            class: "devicon-javascript-plain colored"
         },
         {
             name: "React",
-            class: "devicon-react-original"
+            class: "devicon-react-original colored"
         },
         {
             name: "NodeJS",
-            class: "devicon-nodejs-plain"
+            class: "devicon-nodejs-plain colored"
         },
         {
             name: "CSS 3",
-            class: "devicon-css3-plain"
+            class: "devicon-css3-plain colored"
         },
 
 
         // DATA
         {
             name: "Python",
-            class: "devicon-python-plain"
+            class: "devicon-python-plain colored"
         },
         {
             name: "Jupyter",
-            class: "devicon-jupyter-plain"
+            class: "devicon-jupyter-plain colored"
         },
 
         {
             name: "Numpy",
-            class: "devicon-numpy-original"
+            class: "devicon-numpy-original colored"
         },
         {
             name: "Pandas",
-            class: "devicon-pandas-original"
+            class: "devicon-pandas-original colored"
         },
 
 
@@ -45,35 +46,35 @@ const skillsData = {
         // TEST + sekalaiset
         {
             name: "Cucumber",
-            class: "devicon-cucumber-plain"
+            class: "devicon-cucumber-plain colored"
         },
         {
             name: "Selenium",
-            class: "devicon-selenium-original"
+            class: "devicon-selenium-original colored"
         },
         {
             name: "Linux",
-            class: "devicon-linux-plain"
+            class: "devicon-linux-plain colored"
         },
         {
             name: "Bash",
-            class: "devicon-bash-plain"
+            class: "devicon-bash-plain colored"
         },
         {
             name: "Docker",
-            class: "devicon-docker-plain"
+            class: "devicon-docker-plain colored"
         },
         {
             name: "Git",
-            class: "devicon-git-plain"
+            class: "devicon-git-plain colored"
         },
         {
             name: "Java",
-            class: "devicon-java-plain"
+            class: "devicon-java-plain colored"
         },
         {
             name: "Haskell",
-            class: "devicon-haskell-plain"
+            class: "devicon-haskell-plain colored"
         },
 
     ]
@@ -84,7 +85,7 @@ const SkillsSection = () => {
 
     return (
         <div className="skills-section">
-            <h2>Skills</h2>
+         <h2>Skills</h2>
             <div className="skills-grid">
                 {icons.map((icon, index) => (
                     <div key={index} className="skill-box">
