@@ -8,8 +8,8 @@ import { theme_context } from "../App"
 function Navbar() {
     const { theme, toggle_theme } = useContext(theme_context);
     
-    const Moon = <FontAwesomeIcon icon={ faMoon } size="lg" color='black' /> 
-    const Sun = <FontAwesomeIcon icon={ faSun } size="lg" color='white' />
+    const Moon = <FontAwesomeIcon icon={ faMoon } size="2xl" color='black' /> 
+    const Sun = <FontAwesomeIcon icon={ faSun } size="2xl" color='white' />
   
     return (
         <div className='nav'>

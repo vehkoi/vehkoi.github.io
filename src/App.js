@@ -1,7 +1,8 @@
 import { createContext, useState } from 'react';
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
-
+import Timeline from './components/Timeline'
+import Skills from './components/Skills';
 
 export const theme_context = createContext(null);
 
@@ -16,6 +17,8 @@ function App() {
       <div className="App" id={ theme }>
         <Navbar />
         <Hero />
+        <Timeline />
+        <Skills />
       </div>
     </theme_context.Provider>
   );

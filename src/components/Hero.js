@@ -16,7 +16,7 @@ function Hero () {
                 </div>
             </div>
             <div className='hero-pic'>
-                <img style={{ width: "100%", height: "100%" }} src={require('../images/kuva.png')} alt='Me' />
+                <img style={{ width: "100%", height: "100%" }} src={require('../images/kuva.jpg')} alt='Me' />
             </div> 
         </div>
     )
