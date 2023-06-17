@@ -290,6 +290,20 @@ textarea {
   background-color: #CC3333 !important;
 }
 
+.error-message {
+  color: red;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.success-message {
+  color: green;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 
 /* Footer */ 
 .footer {

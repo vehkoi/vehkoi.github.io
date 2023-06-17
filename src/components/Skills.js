@@ -3,6 +3,31 @@ import '../styles.css'
 
 const skillsData = {
     icons: [
+
+        // DATA
+        {
+            name: "Python",
+            class: "devicon-python-plain colored"
+        },
+        {
+            name: "Numpy",
+            class: "devicon-numpy-original colored"
+        },
+        {
+            name: "Pandas",
+            class: "devicon-pandas-original colored"
+        },
+        {
+            name: "Linux",
+            class: "devicon-linux-plain colored"
+        },
+        {
+            name: "Docker",
+            class: "devicon-docker-plain colored"
+        },
+
+
+
         // WEB
         {
             name: "JavaScript",
@@ -17,29 +42,14 @@ const skillsData = {
             class: "devicon-nodejs-plain colored"
         },
         {
+            name: "HTML 5",
+            class: "devicon-html5-plain colored"
+        },
+        {
             name: "CSS 3",
             class: "devicon-css3-plain colored"
         },
 
-
-        // DATA
-        {
-            name: "Python",
-            class: "devicon-python-plain colored"
-        },
-        {
-            name: "Jupyter",
-            class: "devicon-jupyter-plain colored"
-        },
-
-        {
-            name: "Numpy",
-            class: "devicon-numpy-original colored"
-        },
-        {
-            name: "Pandas",
-            class: "devicon-pandas-original colored"
-        },
 
 
 
@@ -53,16 +63,8 @@ const skillsData = {
             class: "devicon-selenium-original colored"
         },
         {
-            name: "Linux",
-            class: "devicon-linux-plain colored"
-        },
-        {
             name: "Bash",
             class: "devicon-bash-plain colored"
-        },
-        {
-            name: "Docker",
-            class: "devicon-docker-plain colored"
         },
         {
             name: "Git",
@@ -80,12 +82,12 @@ const skillsData = {
     ]
 };
 
-const SkillsSection = () => {
+const Skills = () => {
     const { icons } = skillsData;
 
     return (
         <div className="skills-section">
-         <h2>Skills</h2>
+            <h2>Skills</h2>
             <div className="skills-grid">
                 {icons.map((icon, index) => (
                     <div key={index} className="skill-box">
@@ -98,4 +100,4 @@ const SkillsSection = () => {
     );
 };
 
-export default SkillsSection;
+export default Skills;
