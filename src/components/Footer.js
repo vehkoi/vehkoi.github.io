@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="footer-icons">
         <a className="devicon-twitter-original colored" href='https://twitter.com/veetikoivuniem' target="_blank" rel="noopener noreferrer"> </a>
         <a className="devicon-linkedin-plain colored" href='https://www.linkedin.com/in/veeti-koivuniemi-0b8940206/' target="_blank" rel="noopener noreferrer"> </a>
-        <a className="devicon-github-original colored" href='https://github.com/vehkoi/website' target="_blank" rel="noopener noreferrer"> </a>
+        <a className="devicon-github-original colored" href='https://github.com/vehkoi/' target="_blank" rel="noopener noreferrer"> </a>
       </div>
     </footer>
   );
