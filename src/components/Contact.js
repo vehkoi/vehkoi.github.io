@@ -44,7 +44,7 @@ const Contact = () => {
 
   return (
     <div className='form-container'>
-      <h2> Contact </h2>
+      <h2> Contact me by email </h2>
       <form ref={form} onSubmit={handleSubmit}>
         <input
           name="user_name"

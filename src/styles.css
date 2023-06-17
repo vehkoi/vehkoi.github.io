@@ -1,135 +1,110 @@
+:root {
+  --font-color: #000000;
+  --header-color: #000000;
+  --subheader-color: #363636;
+  --button-color: #000000;
+  --bg-color: #F6E8EA;
+  --success-color: #005700;
+}
+
+[data-theme="dark"] {
+  --font-color: #FFFFFF;
+  --header-color: #FFFFFF;
+  --subheader-color: #D3D3D3;
+  --button-color: #FFFFFF;
+  --bg-color: #063A89;
+  --success-color: #00FF00;
+}
+
+
 * {
-    box-sizing: border-box;
-    font-family: 'Roboto';
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
 }
 
-#light * {
-    background-color: white;
-}
-
-#dark * {
-    background-color: black;
-}
 
 /* NAV */
 .nav {
-    display: flex;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    padding-left: 15%;
-    padding-right: 5%;
+  display: flex;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 15%;
+  padding-right: 5%;
+  border-bottom: 2px solid var(--font-color); /* Tähän voinee keksiä jotain muuta kuin font-colorin käytön joskus */ 
 }
-
-#light .nav {
-    border-bottom: 2px solid black;
-}
-
-#dark .nav {
-    border-bottom: 2px solid white;
-}
-
 
 .nav-right {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .nav ul {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .nav a {
-    text-decoration: none;
-    font-size: 25px;
+  text-decoration: none;
+  font-size: 25px;
 }
-
-#light .nav a {
-    color: black;
-}
-
-#dark .nav a {
-    color: white;
-}
-
 
 /* HERO */
 .hero {
-    display: flex;
-    padding-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 15%;
+  display: flex;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 15%;
 }
 
 .hero-text {
-    text-align: left;
-    width: 50%;
-    padding-top: 5%;
-    padding-right: 2%;
+  text-align: left;
+  width: 50%;
+  padding-top: 5%;
+  padding-right: 2%;
 }
 
 .hero-header {
-    text-align: center;
-    font-size: 36px;
-    text-decoration: underline 2px;
-    margin-bottom: 0%;
-}
-
-#light .hero-header {
-    color: black;
-}
-
-#dark .hero-header {
-    color: white;
+  text-align: center;
+  font-size: 36px;
+  text-decoration: underline 2px;
+  margin-bottom: 0%;
+  color: var(--header-color)
 }
 
 .hero-subheader {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 10%;
-    color: gray
-}
-
-#light .hero-subheader {
-    color: #3D3D3D;
-}
-
-#dark .hero-subheader {
-    color: #B3B3B3;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10%;
+  color: var(--subheader-color)
 }
 
 .hero-introtext {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-#light .hero-introtext {
-    color: black;
-}
-
-#dark .hero-introtext {
-    color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--font-color)
 }
 
 .hero-pic {
-    width: 50%;
+  width: 50%;
 }
 
 
-/* TIMELINE */ 
+/* TIMELINE */
 .experience-container {
   display: flex;
   padding-left: 20%;
   padding-bottom: 5%;
 }
 
-.timeline-container h2{
+.timeline-container h2 {
   font-size: 32px;
   text-decoration: underline 2px;
+  color: var(--header-color)
 }
 
 .timeline-list {
@@ -141,18 +116,21 @@
 .timeline-list-item {
   list-style: none;
   margin: auto;
-  margin-left: 2%; /* adjusts the timeline to the center of the page */
+  margin-left: 2%;
+  /* adjusts the timeline to the center of the page */
   min-height: 50px;
   max-width: 950px;
-  border-left: 2px inset black;
+  border-left: 2px inset var(--font-color); /* Samaten tänne font-colorin sijaan jotain muuta? */
   padding: 0 0 50px 30px;
   position: relative;
+  color: var(--font-color)
 }
 
 .timeline-list-item .item-title {
   font-weight: bold;
   margin-bottom: 10px;
   font-size: 20px;
+  color: var(--font-color)
 }
 
 .timeline-list-item::before {
@@ -160,15 +138,15 @@
   left: -18px;
   top: -5px;
   content: " ";
-  border: 8px solid rgba(255, 255, 255, 1);
+  border: 8px solid var(--font-color); /* Tästä ei puhuta */ 
   border-radius: 50%;
-  background: black;
+  background: var(--font-color); /* Samaten tänne keksiä variable värille */
   height: 20px;
   width: 20px;
 }
 
 .timeline-list-item .timestamp {
-  color: black;
+  color: var(--font-color);
   font-size: 20px;
 }
 
@@ -181,8 +159,8 @@
 }
 
 .timeline-list-item .skills-list .skill-item {
-  background-color: black !important;
-  color: white;
+  background-color: var(--button-color)!important;
+  color: var(--bg-color); /* Toinen melko hakkerivalinta */ 
   padding: 5px 10px;
   border-radius: 5%;
   margin: 5px;
@@ -196,19 +174,20 @@
 
 
 
-/* SKILLS */ 
+/* SKILLS */
 .skills-section h2 {
   font-size: 32px;
   text-decoration: underline 2px;
   padding-left: 20%; /* Sama taso aikaisemman headerin kanssa, erillään skillsseistä, jotta ne saa tiiviimmin */
+  color: var(--header-color)
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   justify-content: center;
-  margin-left: 23%;
-  margin-right: 23%;
+  margin-left: 22%;
+  margin-right: 22%;
   margin-top: 20px;
   padding-bottom: 5%;
 }
@@ -218,7 +197,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid #000;
+  border: 2px solid var(--font-color);
   font-size: 14px;
   width: 120px;
   height: 120px;
@@ -232,6 +211,7 @@
 
 .skill-box span {
   font-size: 18px;
+  color: var(--font-color)
 }
 
 
@@ -242,24 +222,30 @@
   padding-left: 20%;
   text-decoration: underline 2px;
   font-size: 32px;
+  padding-top: 5%;
+  color: var(--header-color);
 }
-
 
 form {
   max-width: 500px;
   margin: 50px auto;
 }
 
+form ::placeholder {
+  color: var(--subheader-color);
+}
+
 .feedback-input {
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-size: 18px;
-  border: 2px solid black;
-  padding: 13px;
+  border: 2px solid var(--font-color);
+  padding: 10px;
   border-radius: 1%;
   margin-bottom: 15px;
   width: 100%;
   box-sizing: border-box;
   outline: 0;
+  color: var(--font-color);
 }
 
 textarea {
@@ -271,50 +257,51 @@ textarea {
   font-family: 'Roboto';
   width: 100%;
   cursor: pointer;
-  color: white;
+  color: var(--bg-color);
   font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: -4px;
   font-weight: bold;
-  background-color: black !important;
+  background-color: var(--font-color) !important;
   border-radius: 15px;
   transition: background-color 0.3s;
 }
 
-.form-container .submit-button:hover {
-  background-color: orange !important;
-}
+ .form-container .submit-button:hover {
+  background-color: var(--subheader-color) !important;
+} 
 
 .form-container .submit-button:active {
-  background-color: #CC3333 !important;
+  background-color: var(--success-color) !important;
 }
 
 .error-message {
-  color: red;
+  color: var(--font-color);
   font-size: 20px;
   text-align: center;
   padding-bottom: 10px;
 }
 
 .success-message {
-  color: green;
+  color: var(--success-color);
   font-size: 20px;
   text-align: center;
   padding-bottom: 10px;
 }
 
 
-/* Footer */ 
+/* Footer */
 .footer {
   text-align: center;
-  border-top: 2px solid black;
+  border-top: 2px solid var(--font-color);
   padding: 10px;
 }
 
 .footer-text {
   font-size: 20px;
   margin-bottom: 10px;
+  color: var(--font-color);
 }
 
 .footer-icons {
@@ -324,24 +311,51 @@ textarea {
   gap: 1%;
 }
 
-.footer-icons a { /* poistaa twitter/linkedin/github iconien alaviivan */
+.footer-icons a {
+  /* poistaa twitter/linkedin/github iconien alaviivan */
   text-decoration: none !important;
 }
 
 .footer-link {
-  color: gray;
+  color: var(--subheader-color);
 }
 
 .footer-link:hover {
-  color: black;
+  color: var(--font-color);
   cursor: pointer;
   text-decoration: none;
 }
 
 
 
-/* MEDIA */ 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA */
 @media (max-width: 1150px) {
   .hero {
     flex-direction: column;
@@ -367,13 +381,38 @@ textarea {
   }
 
   .timeline-list-item {
-    margin-left: 0%; /* adjusts the timeline to the center of the page */
+    margin-left: 0%;
+    /* adjusts the timeline to the center of the page */
   }
+
   .experience-container {
     padding-left: 5%;
     padding-top: 0%;
   }
+
+  .skills-section h2 {
+    padding-left: 5%;
+    /* Sama taso aikaisemman headerin kanssa, erillään skillsseistä, jotta ne saa tiiviimmin */
+  }
+
+  .skills-grid {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5%;
+  }
+
+  /* Contact  */
+  .form-container h2 {
+    padding-left: 5%;
+  }
+
 }
+
+
+
+
+
+
 
 
 @media (max-width: 768px) {
@@ -394,8 +433,9 @@ textarea {
     text-align: center;
     margin-bottom: 5%;
   }
+
   .hero-header {
-  font-size: 25px;
+    font-size: 25px;
   }
 
 
@@ -410,12 +450,59 @@ textarea {
 
 
   .timeline-list-item {
-    margin-left: 0%; /* adjusts the timeline to the center of the page */
+    margin-left: 0%;
+    /* adjusts the timeline to the center of the page */
   }
+
   .experience-container {
     padding-left: 5%;
+    padding-right: 2%;
   }
-  .experience-container h2{
+
+  .experience-container h2 {
+    text-align: center;
+  }
+
+  .experience-container {
+    padding-left: 5%;
+    padding-top: 0%;
+  }
+
+
+
+
+
+
+
+  .skills-section h2 {
+    text-align: center;
+    padding-left: 0%;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+  }
+
+
+
+  .form-container h2 {
+    text-align: center;
+    padding-left: 0%;
+  }
+
+  .feedback-input {
+    width: 90%;
+  }
+
+  .form-container .submit-button {
+    width: 90%;
+    text-align: center;
+  }
+
+  .form-container {
     text-align: center;
   }
 }

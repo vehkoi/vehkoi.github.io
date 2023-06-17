@@ -17,7 +17,7 @@ function App() {
 
   return (
     <theme_context.Provider value={{ theme, toggle_theme }}>
-      <div className="App" id={theme}>
+      <div className="App" data-theme={theme}>
         <Navbar />
         <Hero />
         <Timeline />
