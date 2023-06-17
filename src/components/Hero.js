@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles.css'
+import Typed from "react-typed"
 
 function Hero() {
     return (
@@ -9,7 +10,17 @@ function Hero() {
                     <h1> Hi, I am Veeti</h1>
                 </div>
                 <div className='hero-subheader'>
-                    <h2> Research Assistant / Software Dev </h2>
+                    <Typed
+                        strings={[
+                            "Software Developer",
+                            "Data Analytics Student",
+                            "Research Assistant",
+                            "Machine Learning Enthusiast"
+                        ]}
+                        typeSpeed={150}
+                        backSpeed={100}
+                        loop
+                    />
                 </div>
                 <div className='hero-introtext'>
                     <p> I am a 22-year-old developer from Finland. I am currently working as a research assistant at the University of Turku.

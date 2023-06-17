@@ -16,6 +16,11 @@
   --success-color: #00FF00;
 }
 
+@keyframes fade-in {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
 
 * {
   box-sizing: border-box;
@@ -77,7 +82,7 @@
 
 .hero-subheader {
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 10%;
   color: var(--subheader-color)
 }
@@ -91,6 +96,8 @@
 
 .hero-pic {
   width: 50%;
+  animation-name: fade-in;
+  animation-duration: 4s;
 }
 
 
