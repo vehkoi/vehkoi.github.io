@@ -93,6 +93,10 @@
   color: var(--font-color)
 }
 
+.hero a {
+  color: var(--font-color);
+}
+
 .hero-pic {
   width: 50%;
   animation-name: fade-in;
@@ -230,8 +234,9 @@
 }
 
 form {
-  max-width: 500px;
+  max-width: 800px;
   margin: 50px auto;
+  text-align: center; /* Laittaa subimt buttonin keskelle */ 
 }
 
 form ::placeholder {
@@ -258,6 +263,7 @@ textarea {
 
 .form-container .submit-button {
   font-family: 'Noto Sans';
+  max-width: 500px;
   width: 100%;
   cursor: pointer;
   color: var(--bg-color);
