@@ -10,7 +10,7 @@
 [data-theme="dark"] {
   --font-color: #FFFFFF;
   --header-color: #FFFFFF;
-  --subheader-color: #D3D3D3;
+  --subheader-color: #E0E0E0; /* WCAG contrast checker score 8.05:1 (läpäisee just ja just kaikki) */ 
   --button-color: #FFFFFF;
   --bg-color: #063A89;
   --success-color: #00FF00;
