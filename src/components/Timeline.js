@@ -4,6 +4,13 @@ import '../styles.css';
 const Timeline = () => {
   const workHistoryData = [
     {
+      duration: '09/2023-',
+      title: 'Data Engineer',
+      place: 'Aveso Oy',
+      details: 'In summary: data engineering, Azure services, occasionally AI, maintenance of the IFS ERP system (updates and installations), and Thesis work.',
+      skills: ['Data Engineering', 'SQL', 'Python', 'Azure', 'Kubernetes']
+    },
+    {
       duration: '09/2022-',
       title: 'Research Assistant',
       place: 'Turku University',
@@ -12,26 +19,12 @@ const Timeline = () => {
       skills: ['Web Development', 'Selenium', 'Sustainability', 'Green ICT', 'Teaching']
     },
     {
-      duration: '03/2022 - 09/2022',
-      title: 'Customer Service Worker',
-      place: 'IKEA',
-      details: 'Pushed trolleys from outside to inside. Occasionally helped customers with their needs.',
-      skills: ['Customer Service'],
-    },
-    {
       duration: '10/2021 - 03/2022',
       title: 'Teaching assistant',
       place: 'Turku University',
       details: 'Teaching assistant on courses: Basics of programming, and Basics of object-oriented programming',
       skills: ['Teaching']
-    },
-    {
-      duration: '05/2021 - 08/2021',
-      title: 'Customer Service Worker',
-      place: 'Rainmaker Oy',
-      details: 'Telia customer service through phone & chat.',
-      skills: ['Customer Service', 'Selling']
-    },
+    }
   ];
 
   const educationData = [
@@ -49,13 +42,7 @@ const Timeline = () => {
       details: 'Major: Computer Science, Minors: Information Systems & Math. Title of bachelor\'s thesis: Convolutional Neural Networks in Medical Imaging, grade: 4.' +
         ' Overall GPA: ~3.6',
       skills: ['Computer Science', 'Information Systems', 'Math', 'Programming']
-    },
-    {
-      duration: '2017-2020',
-      title: 'High school graduate',
-      place: 'Vammalan lukio',
-      skills: ['History', 'English', 'German', 'Natural Sciences'],
-    },
+    }
   ];
 
 

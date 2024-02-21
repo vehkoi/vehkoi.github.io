@@ -49,23 +49,6 @@ const skillsData = {
             name: "CSS 3",
             class: "devicon-css3-plain colored"
         },
-
-
-
-
-        // TEST + sekalaiset
-        {
-            name: "Cucumber",
-            class: "devicon-cucumber-plain colored"
-        },
-        {
-            name: "Selenium",
-            class: "devicon-selenium-original colored"
-        },
-        {
-            name: "Bash",
-            class: "devicon-bash-plain colored"
-        },
         {
             name: "Git",
             class: "devicon-git-plain colored"

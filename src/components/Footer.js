@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-text">
-        Made with <FontAwesomeIcon icon={faMugHot} size="lg" color='DarkGoldenRod' /> by Veeti @ 2023 ·
+        Made with <FontAwesomeIcon icon={faMugHot} size="lg" color='DarkGoldenRod' /> by Veeti @ 2024 ·
         <a href='https://github.com/vehkoi/website' className='footer-link' target="_blank" rel="noopener noreferrer"> Source code </a>
       </div>
       <div className="footer-icons">

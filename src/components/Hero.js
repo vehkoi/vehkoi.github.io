@@ -13,8 +13,8 @@ function Hero() {
                     <Typed
                         strings={[
                             "Software Developer",
-                            "Data Analytics Student",
-                            "Research Assistant",
+                            "Data Engineer",
+                            "CS student",
                             "Machine Learning Enthusiast"
                         ]}
                         typeSpeed={150}
@@ -23,8 +23,8 @@ function Hero() {
                     />
                 </div>
                 <div className='hero-introtext'>
-                    <p> I am a 22-year-old developer from Finland. I am currently working as a research assistant at the University of Turku.
-                        Besides working, I am studying to become a computer science engineer, majoring in data analytics. Feel free to contact me: 
+                    <p> I am a 23-year-old data engineer from Finland. I am currently working at Aveso.
+                        Besides working, I am studying to become a graduate engineer in computer science, majoring in data analytics. Feel free to contact me: 
                         <a href="mailto:veeti.koivuniemi@gmail.com"> veeti.koivuniemi@gmail.com</a>
                         </p>
                 </div>
